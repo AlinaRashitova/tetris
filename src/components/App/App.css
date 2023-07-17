@@ -1,0 +1,54 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+  .app {
+    flex-direction: row;
+  }
+}
+
+.app__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app__info_container {
+  font-family: "JETBRAINS MONO", sans-serif;
+  font-weight: 500;
+  background-color: #90ee90;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 3px solid green;
+  text-transform: uppercase;
+}
+
+.app__info_nextTetromino {
+  position: relative;
+  min-width: 200px;
+  min-height: 150px;
+}
+
+.app__info_text {
+  font-weight: 700;
+}
+
+.app__info_number {
+  font-size: 30px;
+}
+
+.app__info_table-caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
